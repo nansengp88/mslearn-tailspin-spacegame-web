@@ -11,11 +11,12 @@
 #             The condition argument specifies to run the task only when the previous task succeeds. 
 #             succeeded() is the default condition, so you don't need to specify it. 
 #             But we show it here to show its use.
+# Version 4 - changed vmImage: Default to name: Default
 trigger:
 - build-pipeline
 
 pool:
-  vmImage: Default
+  name: Default
 
 variables:
   buildConfiguration: 'Release'
