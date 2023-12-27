@@ -15,6 +15,7 @@
 # Version 5 - skip - task: Npm@1
 # Version 6 - modified for Windows environment b/c original environment is Unix
 #             it is saved here - C:\pipeline\doc\learn\azure-pipelines.ymlVersion5
+# Version 7 - realign the Steps (should be in column 1)
 trigger:
 - build-pipeline
   
@@ -23,13 +24,17 @@ pool:
   
   variables:
     buildConfiguration: 'Release'
+
+# steps:
+#  - script: 'echo "Pipeline started"'
+#    displayName: 'Start'    
   
-  steps:
+steps:
   - task: UseDotNet@2
     displayName: 'Use .NET SDK 6.x'
     inputs:
-      packageType: sdk
-      version: '6.x'
+     packageType: sdk
+     version: '6.x'
     
   #- task: Npm@1
   #  displayName: 'Run npm install'
