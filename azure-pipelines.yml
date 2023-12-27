@@ -12,6 +12,7 @@
 #             succeeded() is the default condition, so you don't need to specify it. 
 #             But we show it here to show its use.
 # Version 4 - changed vmImage: Default to name: Default
+# Version 5 - skip - task: Npm@1
 trigger:
 - build-pipeline
 
@@ -28,10 +29,10 @@ steps:
     packageType: sdk
     version: '6.x'
   
-- task: Npm@1
-  displayName: 'Run npm install'
-  inputs:
-    verbose: false
+#- task: Npm@1
+#  displayName: 'Run npm install'
+#  inputs:
+#    verbose: false
   
 - script: './node_modules/.bin/node-sass Tailspin.SpaceGame.Web/wwwroot --output Tailspin.SpaceGame.Web/wwwroot'
   displayName: 'Compile Sass assets'
