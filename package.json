@@ -1,10 +1,16 @@
 {
+  "//": [
+    "C:\\mslearn-tailspin-spacegame-web>xcopy package.json c:\\@alld",
+    "I copied the prvious version to c:\\@alld on 12.27.2023 at 09:46pm"
+  ],
   "devDependencies": {
-    "gulp": "^4.0.2",
-    "gulp-clean-css": "^4.2.0",
-    "gulp-concat": "2.6.1",
-    "gulp-uglify": "3.0.0",
-    "node-sass": "^7.0.1",
-    "rimraf": "2.6.1"
+    "gulp": "*",
+    "gulp-clean-css": "*",
+    "gulp-concat": "*",
+    "gulp-uglify": "*",
+    "rimraf": "*"
+  },
+  "dependencies": {
+    "sass": "^1.69.5"
   }
 }
